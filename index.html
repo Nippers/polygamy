@@ -4,15 +4,18 @@
 Select Incentives:
 <select id="incentive" onchange="reset()">
   <option value="0">maximize quantity of spouses</option>
-  <option value="1">maximize (income / (family size)) - no marriage efficiency</option>
-  <option value="2">maximize (income / (family size)) - marriage efficiency = .5</option>
-  <option value="3">minimize quantity of spouses' spouses</option>
+  <option value="1">maximize ((total income) / (family size)) - no marriage efficiency</option>
+  <option value="2">maximize ((total income) / (family size)) - marriage efficiency = .5</option>
+  <option value="3">maximize quantity of spouses, minimize quantity of spouses' spouses</option>
   <option value="4">women maximize ((husband’s Income) / (family size)), men maximize quantity of wives</option>
 </select>
 <br>
-
 <div id="model">
   <iframe width="720" height="1200" src="//jsfiddle.net/Nipperz/71c1owwr/3/embedded/result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+</div>
+<div style="border:1px solid black; padding:1em; display:inline-block;">
+  <h3>title goes here</h3>
+  description goes here
 </div>
 </body>
 
@@ -24,13 +27,13 @@ function reset(){
   if(incentive==="0"){
     model.innerHTML='<i<iframe width="720" height="1200" src="//jsfiddle.net/Nipperz/71c1owwr/3/embedded/result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>';
   }else if(incentive==="1"){
-    model.innerHTML='<iframe width="720" height="550" src="//jsfiddle.net/Nipperz/p2pzw2q0/2/embedded/result/" frameborder="0"></iframe>';
+    model.innerHTML='<iframe width="720" height="650" src="//jsfiddle.net/Nipperz/p2pzw2q0/2/embedded/result/" frameborder="0"></iframe>';
   }else if(incentive==="2"){
-    model.innerHTML='<iframe width="720" height="550" src="//jsfiddle.net/Nipperz/5hpdk5az/9/embedded/result/" frameborder="0"></iframe>';
+    model.innerHTML='<iframe width="720" height="650" src="//jsfiddle.net/Nipperz/5hpdk5az/9/embedded/result/" frameborder="0"></iframe>';
   }else if(incentive === "3"){
-    model.innerHTML = '<iframe width="720" height="550" src="//jsfiddle.net/Nipperz/a847mscm/4/embedded/result/" frameborder="0"></iframe>';
+    model.innerHTML = '<iframe width="720" height="650" src="//jsfiddle.net/Nipperz/a847mscm/4/embedded/result/" frameborder="0"></iframe>';
   }else if(incentive === "4"){
-    model.innerHTML='<iframe width="720" height="550" src="//jsfiddle.net/Nipperz/a847mscm/6/embedded/result/" frameborder="0"></iframe>';
+    model.innerHTML='<iframe width="720" height="650" src="//jsfiddle.net/Nipperz/a847mscm/6/embedded/result/" frameborder="0"></iframe>';
   }
 
 }
