@@ -29,24 +29,24 @@ function reset(){
   var description = document.getElementById("description");
   if(incentive==="0"){
     model.innerHTML='<iframe width="720" height="1200" src="//jsfiddle.net/Nipperz/71c1owwr/3/embedded/result/" frameborder="0"></iframe>';
-    description.innerHTML = "<u>Incentives:</u><br>Everyone wants to maximize the number of people to whom they are married.<br><br>\
-    <u>Conclusion:</u><br>This model reaches equilibrium when all women are married to all men."
+    description.innerHTML = "<h3>Incentives:</h3>Everyone wants to maximize the number of people to whom they are married.\
+    <h3>Conclusion:</h3>This model reaches equilibrium when all women are married to all men."
   }else if(incentive==="1"){
     model.innerHTML='<iframe width="720" height="650" src="//jsfiddle.net/Nipperz/p2pzw2q0/2/embedded/result/" frameborder="0"></iframe>';
-    description.innerHTML = "<u>Incentives:</u><br>Everyone wants to maximze income per person, i.e. the total income of people in the marriage divided by the number of people in the marriage. There are not economies of scale making marriage more efficient than being single.<br><br>\
-    <u>Conclusion:</u><br>This model reaches equilibrium when no one is married because marriage will either maintain the current income per person if the spouses' incomes are equal or decrease the income per person of the spouse with higher income. A marriage will never benefit both spouses."
+    description.innerHTML = "<h3>Incentives:</h3>Everyone wants to maximze income per person, i.e. the total income of people in the marriage divided by the number of people in the marriage. There are not economies of scale making marriage more efficient than being single.\
+    <h3>Conclusion:</h3>This model reaches equilibrium when no one is married because marriage will either maintain the current income per person if the spouses' incomes are equal or decrease the income per person of the spouse with higher income. A marriage will never benefit both spouses."
   }else if(incentive==="2"){
     model.innerHTML='<iframe width="720" height="650" src="//jsfiddle.net/Nipperz/5hpdk5az/10/embedded/result/" frameborder="0"></iframe>';
-    description.innerHTML = "<u>Incentives:</u><br>Everyone wants to maximze income per person, i.e. the total income of people in the marriage divided by the number of people in the marriage. However, there are economies of scale making marriage 10% more efficient than being single.<br><br>\
-    <u>Conclusion:</u><br>People with high incomes have multiple marriages because the 10% bonus is larger for them and makes several marriages beneficial. People with low incomes do not marry because the 10% bonus is not large enough to overcome the cost of marrying someone with a lower income. However, the people with the most spouses are at not the people with the hightest income but people with the second through sixth highest incomes. The more efficient marriage is, the lower the income of the people with the most spouses."
+    description.innerHTML = "<h3>Incentives:</h3>Everyone wants to maximze income per person, i.e. the total income of people in the marriage divided by the number of people in the marriage. However, there are economies of scale making marriage 10% more efficient than being single.\
+    <h3>Conclusion:</h3>People with high incomes have multiple marriages because the 10% bonus is larger for them and makes several marriages beneficial. People with low incomes do not marry because the 10% bonus is not large enough to overcome the cost of marrying someone with a lower income. However, the people with the most spouses are at not the people with the hightest income but people with the second through sixth highest incomes. The more efficient marriage is, the lower the income of the people with the most spouses."
   }else if(incentive === "3"){
     model.innerHTML = '<iframe width="720" height="650" src="//jsfiddle.net/Nipperz/a847mscm/4/embedded/result/" frameborder="0"></iframe>';
-    description.innerHTML = "<u>Incentives:</u><br>A marriage will occur if, for both parties, the marriage will increase their quantity of spouses without increasing their quantity of spouses' spouses.<br><br>\
-    <u>Conclusion:</u>This model reaches equilibrium when everyone has exactly one spouse.<br>"
+    description.innerHTML = "<h3>Incentives:</h3>A marriage will occur if, for both parties, the marriage will increase their quantity of spouses without increasing their quantity of spouses' spouses.\
+    <h3>Conclusion:</h3>This model reaches equilibrium when everyone has exactly one spouse."
   }else if(incentive === "4"){
     model.innerHTML='<iframe width="720" height="650" src="//jsfiddle.net/Nipperz/a847mscm/6/embedded/result/" frameborder="0"></iframe>';
-    description.innerHTML = "<u>Incentives:</u><br>Women can have at most one husband. Men can have multiple wives. Women want to maximize their husband's income divided by the number of his wives. Men want to maximize their quantity of wives.<br><br>\
-    <u>Conclusion:</u>This model reaches equilibrium when every woman has one husband, the third of men with the highest income have two wives each, middle income men have one wife each, and the third of men with the lowest income have no wives.<br>"
+    description.innerHTML = "<h3>Incentives:</h3>Women can have at most one husband. Men can have multiple wives. Women want to maximize their husband's income divided by the number of his wives. Men want to maximize their quantity of wives.\
+    <h3>Conclusion:</h3>This model reaches equilibrium when every woman has one husband, the third of men with the highest income have two wives each, middle income men have one wife each, and the third of men with the lowest income have no wives."
   }
 
 }
