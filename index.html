@@ -17,7 +17,9 @@ Select Incentives:
   <div id="textnode"></div>
 </div>
 -->
-<iframe width="720" height="510" src="//jsfiddle.net/Nipperz/p2pzw2q0/2/embedded/result/" frameborder="0"></iframe>
+<div id="model">
+  <iframe width="720" height="510" src="//jsfiddle.net/Nipperz/p2pzw2q0/2/embedded/result/" frameborder="0"></iframe>
+</div>
 </body>
 
 <script>
@@ -315,8 +317,15 @@ function RandomMovement(square) {
 window.addEventListener("load", function() {
   update();
 });
+*/
 
 function reset(){
+  var incentive = document.getElementById("incentive").value;
+  var model = document.getElementById("model");
+  if(incentive==="2"){
+    model.innerHTML='<iframe width="720" height="500" src="//jsfiddle.net/Nipperz/5hpdk5az/9/embedded/result/" frameborder="0"></iframe>"'
+  }
+  /*
   for(i=0;i<boxes.length;i++){
     boxes[i].marriages=0;
     boxes[i].wives=[];
@@ -326,6 +335,7 @@ function reset(){
     chicks[i].husbands=[];
   }
   list=[];
+  */
 }
 
 </script>
